@@ -1,8 +1,13 @@
+import Header from "./components/Header";
+import Meals from "./components/Meals";
+import { CartContextProvider } from "./store/CartContext";
+
 const App = () => {
   return (
-    <>
-      <h3>Welcome</h3>
-    </>
+    <CartContextProvider>
+      <Header />
+      <Meals />
+    </CartContextProvider>
   );
 };
 
